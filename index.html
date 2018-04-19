@@ -7,32 +7,16 @@
   <title>Slider with date</title>
 
   <link rel="stylesheet" href="style.css" type="text/css" media="all">
-  <script src="script.js" defer></script>
+  <script src="script.js"></script>
 </head>
 
 <body>
   <script>
-    var today = new Date();
-    var day   = today.getDate();
-    var month = today.getMonth()+1;
-    var year  = today.getFullYear();
-
-    if (day < 10) {
-      day = '0' + day;
-    }
-    if (month < 10) {
-      month = '0' + month;
-    }
-
-    today = year + '' + month + '' + day;
-
-
-    if (today < 20180415) {
-      document.write(today);
+    if (today >= 201804162235 && today < 201804162259) {
+      document.write(today + "<h1>asd</h1><h5>asd</h5>");
     } else {
-      document.write("Yesterday");
+      document.write("<h1>asd</h1>");
     }
-
   </script>
 
 
